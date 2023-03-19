@@ -1,0 +1,15 @@
+#tableau-resultat {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tableau-resultat th, #tableau-resultat td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  #tableau-resultat th {
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  
