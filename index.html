@@ -2,15 +2,17 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Plan Alimentaire</title>
+    <title>MEAL PLANNER</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button onclick="genererPlanAlimentaire()">Générer Plan Alimentaire</button>
-    <button id="effacer" onclick="effacerPage()">Effacer</button>
+    <div id="buttonDiv">
+    <button onclick="generateMealPlan()">Générer les plats de la semaine</button>
+    <button id="clean" onclick="cleanPage()">Effacer</button>
+    </div>
 
-    <table id="tableau-resultat">
+    <table id="results-table">
       <thead>
         <tr>
           <th>DAY</th>

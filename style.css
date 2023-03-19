@@ -1,15 +1,42 @@
-#tableau-resultat {
+#results-table {
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  #tableau-resultat th, #tableau-resultat td {
+  #results-table th, #results-table td {
     border: 1px solid black;
     padding: 8px;
   }
   
-  #tableau-resultat th {
+  #results-table th {
     text-align: left;
     background-color: #f2f2f2;
   }
   
+  #buttonDiv {
+    margin-top: 2em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button:first-child {
+    background-color: #8FBC8F ;
+    padding: 8px;
+    margin: 8px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  button:last-child {
+    background-color: #FF6347;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+  }

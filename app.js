@@ -1,43 +1,43 @@
-const proteines = ["poulet", "viande rouge", "steak", "poisson"];
-const glucides = ["pâtes", "riz", "quinoa", "patates douces"];
-const legumes = ["brocoli", "haricots verts", "chou-fleur", "carottes"];
+const proteins = ["poulet", "viande rouge", "steak", "poisson"];
+const carbohydrates = ["pâtes", "riz", "quinoa", "patates douces"];
+const vegetables = ["brocoli", "haricots verts", "chou-fleur", "carottes"];
 
-function genererPlanAlimentaire() {
-  const joursSemaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
-  const planAlimentaire = [];
+function generateMealPlan() {
+  const dayWeek = ["LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI"];
+  const mealPlan = [];
 
-  for (let i = 0; i < joursSemaine.length; i++) {
-    const plat = {
-      proteine: proteines[Math.floor(Math.random() * proteines.length)],
-      glucide: glucides[Math.floor(Math.random() * glucides.length)],
-      legume: legumes[Math.floor(Math.random() * legumes.length)],
+  for (let i = 0; i < dayWeek.length; i++) {
+    const food = {
+      protein: proteins[Math.floor(Math.random() * proteins.length)],
+      carbohydrate: carbohydrates[Math.floor(Math.random() * carbohydrates.length)],
+      vegetable: vegetables[Math.floor(Math.random() * vegetables.length)],
     };
 
-    planAlimentaire.push(plat);
+    mealPlan.push(food);
   }
 
-  const tableauResultat = document.getElementById("tableau-resultat");
+  const mealResult = document.getElementById("results-table");
 
-  for (let i = 0; i < planAlimentaire.length; i++) {
-    const plat = planAlimentaire[i];
+  for (let i = 0; i < mealPlan.length; i++) {
+    const food = mealPlan[i];
 
-    const nouvelleRangee = tableauResultat.insertRow();
-    const jourCellule = nouvelleRangee.insertCell();
-    jourCellule.textContent = joursSemaine[i];
+    const newRow = mealResult.insertRow();
+    const dayCell = newRow.insertCell();
+    dayCell.textContent = dayWeek[i];
 
-    const proteineCellule = nouvelleRangee.insertCell();
-    proteineCellule.textContent = plat.proteine;
+    const proteinCell = newRow.insertCell();
+    proteinCell.textContent = food.protein;
 
-    const glucideCellule = nouvelleRangee.insertCell();
-    glucideCellule.textContent = plat.glucide;
+    const carbohydratesCell = newRow.insertCell();
+    carbohydratesCell.textContent = food.carbohydrate;
 
-    const legumeCellule = nouvelleRangee.insertCell();
-    legumeCellule.textContent = plat.legume;
+    const vegetableCell = newRow.insertCell();
+    vegetableCell.textContent = food.vegetable;
   }
 }
 
 
-function effacerPage() {
+function cleanPage() {
     location.reload();
   }
   
