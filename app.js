@@ -1,6 +1,6 @@
-const proteins = ["poulet", "viande rouge", "steak", "poisson"];
-const carbohydrates = ["pâtes", "riz", "quinoa", "patates douces"];
-const vegetables = ["brocoli", "haricots verts", "chou-fleur", "carottes"];
+const proteins = ["POULET", "STEAK", "POISSON"];
+const carbohydrates = ["PÂTES", "RIZ", "COUSCOUS", "PATATES"];
+const vegetables = ["TOMATES", "SALADE"];
 
 function generateMealPlan() {
   const dayWeek = ["LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI"];
